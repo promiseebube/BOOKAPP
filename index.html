@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <button id="homeBtn">Home</button>
+    <button id="cartBtn">Cart</button>
+  </nav>
+  <section id="homePage">
+    <h1>Book Collection</h1>
+    <!-- Search Bar -->
+    <div id="searchContainer">
+      <input type="text" id="searchBar" placeholder="Search book by name...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="book-collection">
+      <!-- Six book items -->
+      <div class="book-item" data-name="The Club Dumas" data-author="Arturo Pérez-Reverte" data-price="15">
+        <img src="image/book1.jpg" alt="Book One">
+        <p>Name: The Club Dumas</p>
+        <p>Author: Arturo Pérez-Reverte</p>
+        <p>Price: $15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-item" data-name="The Great Gatsby" data-author="F. Scott Fitzgerald" data-price="12">
+        <img src="image/ki.png" alt="Book Two">
+        <p>Name:The Great Gatsby</p>
+        <p>Author: F. Scott Fitzgerald</p>
+        <p>Price: $12</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-item" data-name="1984" data-author="George Orwell" data-price="20">
+        <img src="image/19.png" alt="Book Three">
+        <p>Name: 1984</p>
+        <p>Author: George Orwell</p>
+        <p>Price: $20</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-item" data-name="The Night Circus" data-author="Erin Morgenstern" data-price="18">
+        <img src="image/ni.png" alt="Book Four">
+        <p>Name: The Night Circus</p>
+        <p>Author: Erin Morgenstern</p>
+        <p>Price: $18</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-item" data-name=" Where the Crawdads Sing" data-author=" Delia Owens" data-price="10">
+        <img src="image/wh.png" alt="Book Five">
+        <p>Name: Where the Crawdads Sing</p>
+        <p>Author: Delia Owens</p>
+        <p>Price: $10</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="book-item" data-name="The Book Thief" data-author="Markus Zusak" data-price="22">
+        <img src="image/the.png" alt="Book Six">
+        <p>Name: The Book Thief</p>
+        <p>Author: Markus Zusak</p>
+        <p>Price: $22</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="cartPage" style="display: none;">
+    <h1>Your Cart</h1>
+    <ul id="cartList"></ul>
+    <p>Total: $<span id="totalPrice">0</span></p>
+  </section>
+  <section id="cartPage" style="display: none;">
+    <h1>Your Cart</h1>
+    <ul id="cartList"></ul>
+    <p>Total: $<span id="totalPrice">0</span></p>
+    <button id="checkoutBtn">Checkout</button>
+    <button id="clearCartBtn">Clear Cart</button>
+  </section>
+  
+  <script src="eco.js"></script>
+</body>
+</html>
